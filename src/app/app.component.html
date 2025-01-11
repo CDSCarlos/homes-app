@@ -1,0 +1,14 @@
+<main>
+    <header class="brand-name">
+        <img class="brand-logo" src="/assets/logo.svg" alt="logo" aria-hidden="true" (click) ="handleClick($event)">
+        <div class="menu-container">
+            <menu></menu>
+        </div>
+        <div class="dropdown-container" (click) ="stopPropagation($event)">
+            <language-region></language-region>
+        </div>        
+    </header>
+    <section class="content">
+        <router-outlet></router-outlet>
+    </section>
+</main>

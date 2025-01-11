@@ -1,0 +1,46 @@
+<article class="article-container">
+    <img class="listing-photo" [src] ="housingLocation?.photo">
+    <section class="listing-description">
+        <h2 class="listing-heading">{{housingLocation?.name}}</h2>
+        <p class="listing-location">{{housingLocation?.city}}, {{housingLocation?.state}}</p>
+    </section>
+    <section class="listing-features">
+        <h2 class="section-heading">
+            {{'APP.DETAILS.ABOUT-HOUSING-LOCATION' | translate}}
+        </h2>
+        <ul>
+            <li>{{'APP.DETAILS.UNITS-AVAILABLE' | translate}} {{housingLocation?.availableUnits}}</li>
+            <li>{{ 'APP.DETAILS.HAVE-WIFI' | translate }} {{housingLocation?.wifi ? ('APP.DETAILS.YES' | translate) : ('APP.DETAILS.NO' | translate)}}</li>
+            <li>{{ 'APP.DETAILS.HAVE-LAUDRY' | translate }} {{housingLocation?.laundry ? ('APP.DETAILS.YES' | translate) : ('APP.DETAILS.NO' | translate)}}</li>
+        </ul>
+    </section>
+    <section class="listing-apply">
+        <h2 class="section-heading">
+            {{ 'APP.DETAILS.APPLY-LIVE-HERE' | translate }}
+        </h2>
+        <form [formGroup] = "applyForm">
+            <label for="first-name">{{ 'APP.DETAILS.PERSONAL-DATA.FIRST-NAME' | translate }}</label>
+            <input id="first-name" type="text" formControlName="firstName" (blur)= "handleInputChange($event, 'firstName')">
+            <label for="last-name">{{ 'APP.DETAILS.PERSONAL-DATA.LAST-NAME' | translate }}</label>
+            <input id="last-name" type="text" formControlName="lastName" (blur)= "handleInputChange($event, 'surname')">
+            <label for="email">{{ 'APP.DETAILS.PERSONAL-DATA.EMAIL' | translate }}</label>
+            <input id="email" type="email" formControlName="email" (blur)= "handleInputChange($event, 'email')">
+            <div class="button-container">
+                <button type="submit" class="primary" (click)="submitApplication()">{{'APP.DETAILS.APPLY-NOW' | translate}}</button>
+            </div>
+        </form>        
+    </section>
+    <section>
+        <form [formGroup] = "otherForm">
+            <label *ngIf= "(detail?.firstName?.length ?? 0) > 0" id="first-name-label">
+                {{ otherForm.get('firstNameLabel')?.value }}
+              </label>
+              <label *ngIf= "(detail?.surname?.length ?? 0) > 0" id="surname-label">
+                {{ otherForm.get('surnameLabel')?.value }}
+              </label>
+              <label *ngIf = "(detail?.email?.length ?? 0) > 0" id="email-label">
+                {{ otherForm.get('emailLabel')?.value }}
+              </label>
+        </form>
+    </section>
+</article>

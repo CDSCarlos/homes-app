@@ -1,0 +1,17 @@
+  <nav class="desktop-nav">
+    <a [routerLink]="'/schedule'">{{'APP.MENU.SCHEDULE' | translate}}</a>
+    <a [routerLink]="'/videos'">{{'APP.MENU.VIDEOS' | translate}}</a>
+    <a [routerLink]="'/gallery'">{{'APP.MENU.GALLERY' | translate}}</a>
+    <a [routerLink]="'/store'">{{'APP.MENU.STORE' | translate}}</a>
+  </nav>
+  <div class="menu-toggle" (click)="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="mobile-nav" [class.open]="menuOpen">
+    <a [routerLink]="'/schedule'" (click)="closeMenu()">{{'APP.MENU.SCHEDULE' | translate}}</a>
+    <a [routerLink]="'/videos'" (click)="closeMenu()">{{'APP.MENU.VIDEOS' | translate}}</a>
+    <a [routerLink]="'/gallery'" (click)="closeMenu()">{{'APP.MENU.GALLERY' | translate}}</a>
+    <a [routerLink]="'/store'" (click)="closeMenu()">{{'APP.MENU.STORE' | translate}}</a>
+  </div>
