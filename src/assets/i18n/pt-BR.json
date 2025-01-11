@@ -1,0 +1,44 @@
+{
+    "APP": {
+        "DETAILS": {
+            "ABOUT-HOUSING-LOCATION": "Sobre este local de moradia",
+            "UNITS-AVAILABLE": "Unidades disponíveis: ",
+            "HAVE-WIFI": "Este local possui Wi-Fi: ",
+            "HAVE-LAUDRY": "Este local possui lavanderia: ",
+            "APPLY-LIVE-HERE": "Inscreva-se agora para morar aqui",
+            "YES": "Sim",
+            "NO": "Não",
+            "PERSONAL-DATA": {
+                "FIRST-NAME": "Primeiro Nome",
+                "LAST-NAME": "Sobrenome",
+                "EMAIL": "E-mail"
+            },
+            "APPLY-NOW": "Inscreva-se agora"
+
+        },
+        "HOME": {
+            "FILTER": "Filtrar por cidade",
+            "SEARCH": "Buscar"
+        },
+        "HOUSING-LOCATION": {
+            "EXTERIOR-PHOTO": "Foto externa de ",
+            "LEARN-MORE": "Saiba mais"
+        },
+        "MENU": {
+            "SCHEDULE": "Agendamento",
+            "VIDEOS": "Vídeos",
+            "GALLERY": "Galeria",
+            "STORE": "Loja"
+        },
+        "SCHEDULE":{
+            "CREATE-SCHEDULE": "Criar Agendamento",
+            "EVENT-NAME": "Nome do Evento",
+            "EVENT-DATE": "Data do Evento",
+            "EVENT-TIME": "Horário do Evento",
+            "ADD-EVENT": "Adicionar Evento",
+            "EDIT-EVENT": "Editar Evento",
+            "DELETE-EVENT": "Excluir Evento",
+            "LIST-SCHEDULE": "Lista de Agendamentos"
+        }
+    }
+}

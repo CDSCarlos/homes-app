@@ -1,0 +1,43 @@
+{
+    "APP": {
+        "DETAILS": {
+            "ABOUT-HOUSING-LOCATION": "About this housing location",
+            "UNITS-AVAILABLE": "Units available: ",
+            "HAVE-WIFI": "This location has Wi-Fi: ",
+            "HAVE-LAUDRY": "This location has laundry: ",
+            "APPLY-LIVE-HERE": "Apply now to live here",
+            "YES": "Yes",
+            "NO": "No",
+            "PERSONAL-DATA": {
+                "FIRST-NAME": "First Name",
+                "LAST-NAME": "Last Name",
+                "EMAIL": "Email"
+            },
+            "APPLY-NOW": "Apply now"
+        },
+        "HOME": {
+            "FILTER": "Filter by city",
+            "SEARCH": "Search"
+        },
+        "HOUSING-LOCATION": {
+            "EXTERIOR-PHOTO": "Exterior photo of ",
+            "LEARN-MORE": "Learn more"
+        },
+        "MENU": {
+            "SCHEDULE": "Schedule",
+            "VIDEOS": "Videos",
+            "GALLERY": "Gallery",
+            "STORE": "Store"
+        },
+        "SCHEDULE": {
+            "CREATE-SCHEDULE": "Create Schedule",
+            "EVENT-NAME": "Event Name",
+            "EVENT-DATE": "Event Date",
+            "EVENT-TIME": "Event Time",
+            "ADD-EVENT": "Add Event",
+            "EDIT-EVENT": "Edit Event",
+            "DELETE-EVENT": "Delete Event",
+            "LIST-SCHEDULE": "Schedule List"
+        }
+    }
+}

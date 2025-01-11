@@ -1,0 +1,72 @@
+/* Dropdown styling */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%; /* Matches input width */
+}
+
+.dropdown-toggle {
+  border: solid 1px var(--primary-color); /* Matches input border */
+  padding: 10px; /* Matches input padding */
+  border-radius: 8px; /* Matches input border-radius */
+  margin-right: 4px; /* Matches input margin */
+  background-color: #f9f9f9; /* Optional: Adjust based on your preference */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures content is spaced */  
+  max-width: 100%; /* Prevents it from exceeding container width */
+  min-width: 133px; /* Ensures a minimum size */
+  cursor: pointer;
+  box-sizing: border-box; /* Includes padding and border in width */
+  overflow: hidden; /* Ensures content doesn’t overflow */
+  white-space: nowrap; /* Prevents text wrapping */
+  text-overflow: ellipsis; /* Adds "..." for overflowed text */
+}
+
+.flag-icon {
+  width: 20px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 100%; /* Matches container width */
+  border-radius: 8px; /* Matches input border-radius */
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive styling */
+@media (min-width: 500px) and (max-width: 768px) {
+  .dropdown {
+      width: 100%; /* Matches input width */
+  }
+}
+
+@media (max-width: 499px) {
+  .dropdown {
+      width: 100%; /* Matches input responsiveness */
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown-toggle {    
+    min-width: 133px; /* Ensures a minimum size */    
+  }
+}

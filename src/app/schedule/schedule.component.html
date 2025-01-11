@@ -1,0 +1,35 @@
+<div class="schedule-form">
+    <h2>{{'APP.SCHEDULE.CREATE-SCHEDULE' | translate}} </h2>
+    <form (ngSubmit)="addEvent()">
+      <label for="eventName">{{'APP.SCHEDULE.EVENT-NAME' | translate}}:</label>
+      <input
+        type="text"
+        id="eventName"
+        [(ngModel)]="newEvent.eventName"
+        name="eventName"
+      />
+      <label for="date">{{'APP.SCHEDULE.EVENT-DATE' | translate}}:</label>
+      <input
+        type="date"
+        id="date"
+        [(ngModel)]="newEvent.date"
+        name="date"
+      />
+      <label for="time">{{'APP.SCHEDULE.EVENT-TIME' | translate}}:</label>
+      <input
+        type="time"
+        id="time"
+        [(ngModel)]="newEvent.time"
+        name="time"
+      />
+      <button type="button" (click)="addEvent()">{{'APP.SCHEDULE.ADD-EVENT' | translate}}</button>
+    </form>
+  
+    <h3>{{'APP.SCHEDULE.LIST-SCHEDULE' | translate}}</h3>
+    <ul>
+      <li *ngFor="let event of schedule">
+        {{ event.eventName }} - {{ event.date }} at {{ event.time }}
+      </li>
+    </ul>
+  </div>
+  

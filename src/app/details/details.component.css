@@ -1,0 +1,90 @@
+  .article-container{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .listing-photo {
+    height: 600px;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 30px;
+    float: right;
+  }
+  
+  .listing-heading {
+    font-size: 48pt;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .listing-location::before {
+    content: url('/assets/location-pin.svg') / '';
+  }
+  
+  .listing-location {
+    font-size: 24pt;
+    margin-bottom: 15px;
+  }
+  
+  .listing-features > .section-heading {
+    color: var(--secondary-color);
+    font-size: 14pt;
+    margin-bottom: 35px;
+  }
+  
+  .listing-features {
+    margin-bottom: 20px;
+  }
+  
+  .listing-features li {
+    font-size: 14pt;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  .listing-apply .section-heading {
+    font-size: 20pt;
+    margin-bottom: 25px;
+  }
+  
+  label, input {
+    display: block;
+  }
+  label {
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12pt;
+  }
+  input {
+    font-size: 16pt;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 400px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid .3px;
+  }
+  @media (max-width: 768px) {
+    .listing-photo {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px; /* Add space below the image */
+    }
+  
+    .button-container {
+      margin-bottom: 20px; /* Add spacing below the button */
+      text-align: center; /* Center the button */
+    }
+  
+    input {
+      width: 100%; /* Make input fields responsive */
+    }
+  
+    .listing-apply {
+      padding: 10px; /* Add padding for better spacing */
+    }
+  }

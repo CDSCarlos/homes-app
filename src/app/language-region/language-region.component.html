@@ -1,0 +1,12 @@
+<div class="dropdown">
+    <button class="dropdown-toggle" type="button" (click)="toggleDropdown()">
+        {{ selectedLanguage.text }}
+        <img [src]="selectedLanguage.img" alt="flag" class="flag-icon">
+    </button>
+    <div class="dropdown-menu" *ngIf="dropdownOpen">
+        <div *ngFor="let option of languages" class="dropdown-item" (click)="selectLanguage(option)">
+            <img [src]="option.img" alt="flag" class="flag-icon">
+            <span>{{ option.text }}</span>
+        </div>
+    </div>
+</div>
