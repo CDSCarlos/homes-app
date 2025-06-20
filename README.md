@@ -1,24 +1,47 @@
-# Angular Homes App
-- Install Angular if you don't have it installed
+# front-with-dbserver
 
-  `npm install -g @angular/cli`
+> ⚠️ **Projeto Experimental**  
+> Este repositório foi criado exclusivamente para fins de estudo, com base em uma série oficial de vídeos da equipe do Angular no YouTube, ministrada por **Mark Thompson**, membro da Angular Core Team no Google (EUA).
 
-- Clone this branch to your local machine
+## 📘 Descrição
 
-  `git clone -b homes-app-start git@github.com:angular/codelabs.git homes-app`
+Este projeto frontend demonstra o uso de **Angular** com foco em:
 
-- Once the code has been downloaded
+- Componentes standalone modernos (Angular 15+)
+- Consumo de serviços simulados (estilo DBServer)
+- Internacionalização com `@ngx-translate/core`
+- Manipulação de formulários reativos (`ReactiveFormsModule`)
+- Organização modular com múltiplas rotas e componentes reutilizáveis
+- Utilização de `LocalStorage` para preferências de idioma
 
-  `cd homes-app`
+> 💡 Este repositório tem fins educacionais. A arquitetura não segue padrões de produção como feito em outros projetos meus, que seguem boas práticas tanto front quanto back.
 
-- Install the depencies
+---
 
-  `npm install` 
+## 📚 Fonte Oficial
 
-- Run the application 
+Este projeto foi desenvolvido com base na playlist:
 
-  `ng serve`
+**📺 [Learning Angular - YouTube](https://www.youtube.com/watch?v=UnOwDuliqZA)**  
+🎓 Por **Mark Thompson**  
+👨‍💻 Angular Core Team – Google | EUA
 
-- Run db server
+A playlist aborda os seguintes temas:
 
-  `json-server --watch db.json --port 3001`
+- Getting Started
+- Components & Directives
+- Routing
+- Services
+- Forms
+- HTTP Requests
+
+---
+
+## 🚀 Como executar
+
+```bash
+git clone https://github.com/CDSCarlos/homes-app.git
+cd homes-app
+npm install
+json-server --watch db.json --port 3001
+npm start
